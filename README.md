@@ -8,6 +8,8 @@ Faster R-CNN has two outputs for each candidate object: a class label and a boun
 
 While examining Mask R-CNN, we should remember that Faster R-CNN consists of two stages. The first stage, called the District Proposal Network, proposes candidate bounding boxes. The second phase, which is actually Fast R-CNN, does RoI Pooling (Region of Interest Pooling) from each candidate tile. In this way, it performs classification and bounding box regression by extracting features. To put it briefly, Mask R-CNN adopts this two-step procedure that Faster R-CNN has. Mask R-CNN outputs a binary mask for each RoI in parallel with the class and tile address outputs in the second stage.
 
+https://www.researchgate.net/publication/315454672_Mask_R-CNN
+
 # Mask R-CNN Implementation With Custom Dataset
 
 ## Dataset Configuration
