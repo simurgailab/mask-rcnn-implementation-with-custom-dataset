@@ -77,6 +77,11 @@ More info about Mask R-CNN:
 
 
 # References
-* [He, Kaiming, et al. "Mask r-cnn." Proceedings of the IEEE international conference on computer vision. 2017.](https://arxiv.org/abs/1703.06870)
-* [Mask R-CNN for Object Detection and Segmentation](https://github.com/matterport/Mask_RCNN/)
+
+* He, Kaiming, et al. ["Mask r-cnn."](https://arxiv.org/abs/1703.06870) Proceedings of the IEEE international conference on computer vision. 2017.
+
+* Girshick, Ross. ["Fast r-cnn."](https://openaccess.thecvf.com/content_iccv_2015/papers/Girshick_Fast_R-CNN_ICCV_2015_paper.pdf) Proceedings of the IEEE international conference on computer vision. 2015.
+
+* Ren, Shaoqing, et al. ["Faster r-cnn: Towards real-time object detection with region proposal networks."](https://proceedings.neurips.cc/paper/2015/file/14bfa6bb14875e45bba028a21ed38046-Paper.pdf) Advances in neural information processing systems 28 (2015).
+* Reference Repo: [Mask R-CNN for Object Detection and Segmentation](https://github.com/matterport/Mask_RCNN/)
 * Original repo is available at [Detectron](https://github.com/facebookresearch/Detectron)
