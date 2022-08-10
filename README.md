@@ -43,4 +43,11 @@ class customDataset(utils.Dataset):
         images= list(annotations1.values())[1]  # don't need the dict keys
     ...
 ```
-and  for matching polygons and images.
+Load_mask function has been defined for matching polygons and images that have been given its infos.
+```
+class customDataset(utils.Dataset):
+    ...
+    def load_mask(self, image_id):
+    ...
+```
+
