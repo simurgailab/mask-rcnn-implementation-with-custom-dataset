@@ -77,3 +77,6 @@ More info about Mask R-CNN:
 
 
 # References
+* [He, Kaiming, et al. "Mask r-cnn." Proceedings of the IEEE international conference on computer vision. 2017.](https://arxiv.org/abs/1703.06870)
+* [Mask R-CNN for Object Detection and Segmentation](https://github.com/matterport/Mask_RCNN/)
+* Original repo is available at [Detectron](https://github.com/facebookresearch/Detectron)
