@@ -12,14 +12,14 @@ While examining Mask R-CNN, we should remember that Faster R-CNN consists of two
 
 ## Dataset Configuration
 
-After importing libraries, class count as "Background + Classcount" has to been specify in configuration step:
+&rarr; After importing libraries, class count as "Background + Classcount" has to been specify in configuration step:
 
 ```
     # Number of classes (including background)
     NUM_CLASSES = 1 + 5  # Background + classname, for instance, if there are 5 classes, specify 1+5.
 ``` 
 
-Custom classes has to been added to self attribute in creating a synthetic dataset step:
+&rarr; Custom classes has to been added to self attribute in creating a synthetic dataset step:
 ```
 class customDataset(utils.Dataset):
 
@@ -33,7 +33,7 @@ class customDataset(utils.Dataset):
     ...
 ```
 
-After previous step, annotation file (.json) has to been defined as custom. 
+&rarr; After previous step, annotation file (.json) has to been defined as custom. 
 Meanwhile, attention has to be on the index value in this step. The index values are related to your custom json file.
 ```
 class customDataset(utils.Dataset):
@@ -49,7 +49,7 @@ class customDataset(utils.Dataset):
         images= list(annotations1.values())[1]  # don't need the dict keys
     ...
 ```
-Load_mask function has been defined for matching polygons and images that have been given its infos.
+&rarr; Load_mask function has been defined for matching polygons and images that have been given its infos.
 ```
 class customDataset(utils.Dataset):
     ...
@@ -61,7 +61,7 @@ class customDataset(utils.Dataset):
 
 More info about Mask R-CNN:
 
-### Medium
+&rarr; **Medium**
 * [Mask R-CNN Overlapping Bounding Boxes Problem](https://pub.towardsai.net/mask-r-cnn-overlapping-bounding-boxes-problem-a9582d41875b)
 * [Nesne Tespit Algoritmalarının Gelişimi (CNN, R-CNN, Fast R-CNN ve Faster R-CNN) — 1](https://dilaraozdemir.medium.com/nesne-tespit-algoritmalar%C4%B1n%C4%B1n-geli%C5%9Fimi-cnn-r-cnn-fast-r-cnn-ve-faster-r-cnn-1-521ab97071a0)
 * [Nesne Tespit Algoritmalarının Gelişimi (Mask R-CNN) — 2](https://dilaraozdemir.medium.com/nesne-tespit-algoritmalar%C4%B1n%C4%B1n-geli%C5%9Fimi-mask-r-cnn-2-b622f6f4c2a8)
@@ -69,8 +69,7 @@ More info about Mask R-CNN:
 * [R-CNN Ailesi Part I: R-CNN & Fast R-CNN](https://elifmeseci.medium.com/r-cnn-ailesi-part-i-6aaf775d05d2)
 
 
-
-### Videos
+&rarr; **Videos**
 * [Adım Adım Sıfırdan Mask R-CNN Projesi Oluşturma](https://youtu.be/9ZNtavU1asE)
 * [Adım Adım Özel Veri Kümesinde Mask R-CNN Uygulaması](https://youtu.be/Ldnmxa4pM3g)
 * [Zero to Hero: Mask RCNN Project](https://youtu.be/cpSa0WMAkzY)
