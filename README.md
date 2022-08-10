@@ -58,7 +58,7 @@ class customDataset(utils.Dataset):
     ...
 ```
 
-# Extra
+# Appendices
 
 More info about Mask R-CNN:
 
