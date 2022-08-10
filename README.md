@@ -57,3 +57,16 @@ class customDataset(utils.Dataset):
     ...
 ```
 
+# Extra
+
+More info about Mask R-CNN:
+
+### Medium
+* [Mask R-CNN Overlapping Bounding Boxes Problem](https://pub.towardsai.net/mask-r-cnn-overlapping-bounding-boxes-problem-a9582d41875b)
+* [Nesne Tespit Algoritmalarının Gelişimi (CNN, R-CNN, Fast R-CNN ve Faster R-CNN) — 1](https://dilaraozdemir.medium.com/nesne-tespit-algoritmalar%C4%B1n%C4%B1n-geli%C5%9Fimi-cnn-r-cnn-fast-r-cnn-ve-faster-r-cnn-1-521ab97071a0)
+* [Nesne Tespit Algoritmalarının Gelişimi (Mask R-CNN) — 2](https://dilaraozdemir.medium.com/nesne-tespit-algoritmalar%C4%B1n%C4%B1n-geli%C5%9Fimi-mask-r-cnn-2-b622f6f4c2a8)
+
+### Videos
+* [Adım Adım Sıfırdan Mask R-CNN Projesi Oluşturma](https://youtu.be/9ZNtavU1asE)
+* [Adım Adım Özel Veri Kümesinde Mask R-CNN Uygulaması](https://youtu.be/Ldnmxa4pM3g)
+* [Zero to Hero: Mask RCNN Project](https://youtu.be/cpSa0WMAkzY)
