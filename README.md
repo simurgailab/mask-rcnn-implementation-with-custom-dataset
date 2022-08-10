@@ -2,6 +2,12 @@
 
 You should follow instructions in this [repo](https://github.com/simurgailab/installation-guide-of-maskrcnn) for proper installation.
 
+# Mask R-CNN Object Detection Architecture
+
+Faster R-CNN has two outputs for each candidate object: a class label and a bounding box offset. In Mask R-CNN, in addition to these outputs, a branch that extracts the object mask is added. However, this mask output is quite different from the class and box output. In addition, a difference from Fast R-CNN and Faster R-CNN is that the pixel-to-pixel alignment method is used in Mask R-CNN.
+
+While examining Mask R-CNN, we should remember that Faster R-CNN consists of two stages. The first stage, called the District Proposal Network, proposes candidate bounding boxes. The second phase, which is actually Fast R-CNN, does RoI Pooling (Region of Interest Pooling) from each candidate tile. In this way, it performs classification and bounding box regression by extracting features. To put it briefly, Mask R-CNN adopts this two-step procedure that Faster R-CNN has. Mask R-CNN outputs a binary mask for each RoI in parallel with the class and tile address outputs in the second stage.
+
 # Mask R-CNN Implementation With Custom Dataset
 
 ## Dataset Configuration
