@@ -70,3 +70,6 @@ More info about Mask R-CNN:
 * [Adım Adım Sıfırdan Mask R-CNN Projesi Oluşturma](https://youtu.be/9ZNtavU1asE)
 * [Adım Adım Özel Veri Kümesinde Mask R-CNN Uygulaması](https://youtu.be/Ldnmxa4pM3g)
 * [Zero to Hero: Mask RCNN Project](https://youtu.be/cpSa0WMAkzY)
+
+
+# References
