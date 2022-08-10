@@ -86,3 +86,4 @@ More info about Mask R-CNN:
 * Ren, Shaoqing, et al. ["Faster r-cnn: Towards real-time object detection with region proposal networks."](https://proceedings.neurips.cc/paper/2015/file/14bfa6bb14875e45bba028a21ed38046-Paper.pdf) Advances in neural information processing systems 28 (2015).
 * Reference Repo: [Mask R-CNN for Object Detection and Segmentation](https://github.com/matterport/Mask_RCNN/)
 * Original repo is available at [Detectron](https://github.com/facebookresearch/Detectron)
+* Lin, Tsung-Yi, et al. ["Microsoft coco: Common objects in context."](https://arxiv.org/abs/1405.0312) European conference on computer vision. Springer, Cham, 2014.
