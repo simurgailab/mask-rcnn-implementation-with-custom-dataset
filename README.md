@@ -26,7 +26,7 @@ class customDataset(utils.Dataset):
 
     def load_class(self, dataset_dir, subset):
     ...
-
+        
         self.add_class("configclassname", 1, "class1")
         self.add_class("configclassname", 2, "class2")
         self.add_class("configclassname", 3, "class3")
@@ -61,12 +61,9 @@ class customDataset(utils.Dataset):
 &rarr; configclassname also has to be changed in following sections.
 ```
     def image_reference(self, image_id):
-        """Return the path of the image."""
-        info = self.image_info[image_id]
+        ...
         if info["source"] == "configclassname":
-            return info["path"]
-        else:
-            super(self.__class__, self).image_reference(image_id)
+            ...
 ```
 # Appendices
 
