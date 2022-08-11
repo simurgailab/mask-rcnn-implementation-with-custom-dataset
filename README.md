@@ -58,7 +58,16 @@ class customDataset(utils.Dataset):
     def load_mask(self, image_id):
     ...
 ```
-
+&rarr; configclassname also has to be changed in following sections.
+```
+    def image_reference(self, image_id):
+        """Return the path of the image."""
+        info = self.image_info[image_id]
+        if info["source"] == "configclassname":
+            return info["path"]
+        else:
+            super(self.__class__, self).image_reference(image_id)
+```
 # Appendices
 
 More info about Mask R-CNN:
