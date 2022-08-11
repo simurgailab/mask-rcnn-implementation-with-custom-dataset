@@ -20,13 +20,12 @@ While examining Mask R-CNN, we should remember that Faster R-CNN consists of two
     NUM_CLASSES = 1 + 5  # Background + classname, for instance, if there are 5 classes, specify 1+5.
 ``` 
 
-&rarr; Custom classes has to been added to self attribute in creating a synthetic dataset step:
+&rarr; Custom classes has to been added to self attribute in creating a synthetic dataset step. In here "configclassname" specifies the superclass in json annotation file inside the "Categories" key.
 ```
 class customDataset(utils.Dataset):
 
     def load_class(self, dataset_dir, subset):
     ...
-        
         self.add_class("configclassname", 1, "class1")
         self.add_class("configclassname", 2, "class2")
         self.add_class("configclassname", 3, "class3")
@@ -58,13 +57,31 @@ class customDataset(utils.Dataset):
     def load_mask(self, image_id):
     ...
 ```
-&rarr; configclassname also has to be changed in following sections.
+&rarr; "configclassname" also has to be changed in following sections.
 ```
     def image_reference(self, image_id):
         ...
         if info["source"] == "configclassname":
             ...
 ```
+```
+class customDataset(utils.Dataset):
+
+    def load_class(self, dataset_dir, subset):
+        for img in images:
+            ...
+            self.add_image(
+                "configclassname", #custom super class name
+                ...
+```
+
+```
+class customDataset(utils.Dataset):
+    def load_mask(self, image_id):
+        if image_info["source"] != "configclassname":
+            ...
+```
+
 # Appendices
 
 More info about Mask R-CNN:
