@@ -26,11 +26,12 @@ class customDataset(utils.Dataset):
 
     def load_class(self, dataset_dir, subset):
     ...
-        self.add_class("configclassname1", 1, "class1")
-        self.add_class("configclassname2", 2, "class2")
-        self.add_class("configclassname3", 3, "class3")
-        self.add_class("configclassname4", 4, "class4")
-        self.add_class("configclassname5", 5, "class5")
+
+        self.add_class("configclassname", 1, "class1")
+        self.add_class("configclassname", 2, "class2")
+        self.add_class("configclassname", 3, "class3")
+        self.add_class("configclassname", 4, "class4")
+        self.add_class("configclassname", 5, "class5")
     ...
 ```
 
