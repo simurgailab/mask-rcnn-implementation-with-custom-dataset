@@ -84,7 +84,7 @@ class customDataset(utils.Dataset):
 
 # Appendices
 
-More info about Mask R-CNN:
+More information about Mask R-CNN:
 
 &rarr; **Medium**
 * [Mask R-CNN Overlapping Bounding Boxes Problem](https://pub.towardsai.net/mask-r-cnn-overlapping-bounding-boxes-problem-a9582d41875b)
